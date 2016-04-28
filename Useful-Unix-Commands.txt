@@ -14,6 +14,8 @@
 **** Useful Unix Commands ****
 
 ## For Listing only Directories	##
+ls -d */
+ls -lrtd */
 
 
 ## For Listing only File names rather than complete Directory Structure ##
