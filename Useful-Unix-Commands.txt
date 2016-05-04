@@ -23,12 +23,23 @@ ls -lrtd */
 ls /home/user/new/*.txt | sed -r 's/^.+\///'
 
 
+###   For Counting No. of files in a Directory	###
+ls | wc -l
+
+
 ## For Sorting ##
 ------------------
 sort -n 
 sort -t "any delimiter" -k2  (means 2 column after delimiter)
 
-
+	
 ###		FOR SEARCHING	###
 
 crontab -l | grep -i 'adbempubserver'
+
+
+### Searching a particular String in List of files 	###
+ find . -type f | xargs grep -l ETS_EVENTS_ETL_INCR_
+ grep --recursive --ignore-case --files-with-matches "ETS_EVENTS_ETL_INCR_" .   (. indicates current dir - we can give dir name as requied)
+ 
+ 
