@@ -1,0 +1,4 @@
+
+
+## In hadoop editing a File is not possible so we need to edit the file by taking it into Local & then move it into HDFS using -put command & using -f (force) option
+	hdfs dfs -put -f <source file> <destination>
