@@ -41,5 +41,5 @@ crontab -l | grep -i 'adbempubserver'
 ### Searching a particular String in List of files 	###
  find . -type f | xargs grep -l ETS_EVENTS_ETL_INCR_
  grep --recursive --ignore-case --files-with-matches "ETS_EVENTS_ETL_INCR_" .   (. indicates current dir - we can give dir name as requied)
- 
+ grep -il failed misets_*2016-05-29* -- (-i option is for ignoring case, -l option is for listing files containing tht word)
  
