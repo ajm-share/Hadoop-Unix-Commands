@@ -1,4 +1,11 @@
 
 
 ## In hadoop editing a File is not possible so we need to edit the file by taking it into Local & then move it into HDFS using -put command & using -f (force) option
-	hdfs dfs -put -f <source file> <destination>
+	
+	-> hdfs dfs -put -f <source file> <destination>
+	
+## For checking, How a large files is stored on a cluster like on which node & block we use the hadoop fsck command with -files & -batch option
+
+	-> hdfs fsck /datasets/input/cards/largedeck.txt -files -blocks		(we have selected a particular file name)
+	
+	
